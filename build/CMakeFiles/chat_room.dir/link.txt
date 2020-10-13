@@ -1,0 +1,1 @@
+/usr/bin/g++ -fPIC  -rdynamic -O3 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror 	 -Wno-unused-function -Wno-unused-result -Wno-builtin-macro-redefined  -shared -Wl,-soname,libchat_room.so -o ../lib/libchat_room.so CMakeFiles/chat_room.dir/chat/my_module.cpp.o CMakeFiles/chat_room.dir/chat/resource_servlet.cpp.o  -L/usr/local/lib 

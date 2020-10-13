@@ -1,0 +1,18 @@
+logs:
+  - name: root
+    level: info
+    # formatter: "%d%T%m%n"
+    appenders:
+      - type: FileLogAppender
+        # file: root.txt
+        file: /home/logs/chat_room/root.txt
+      - type: StdoutLogAppender
+  - name: system
+    level: info
+    appenders:
+      - type: FileLogAppender
+        # file: system.txt
+        file: /home/logs/chat_room/system.txt
+        # formatter: "%d%T[%p]%T%m%n"
+      - type: StdoutLogAppender
+ 
